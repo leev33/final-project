@@ -1,4 +1,3 @@
-
 var coin = document.getElementById('coin');
 var button = document.getElementById('button');
 var result = document.getElementById('result');
@@ -6,6 +5,7 @@ var headsCounter = document.getElementById('headsCounter');
 var TailsCounter = document.getElementById('TailsCounter');
 var heads = 0;
 var tails = 0;
+
 
 function coinToss() {
 
@@ -19,7 +19,7 @@ function coinToss() {
     headsCounter.innerHTML = '<h1> Number of heads: ' + heads + '</h1>';
 
   } else {
-    coin.innerHTML = '<img class="tails animate-coin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/US_50_Cent_Rev.png/128px-US_50_Cent_Rev.png"/>';
+    coin.innerHTML = '<img class="tails animate-coin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/US_50_Cent_Rev.png/145px-US_50_Cent_Rev.png"/>';
      tails += 1;
     result.innerHTML = 'You got tails';
      tailsCounter.innerHTML = '<h1> Number of tails: ' + tails + '</h1>';
