@@ -16,3 +16,49 @@ I worked on changing the format within jsfiddle so that I wouldn't need to inclu
 I have found photos that are in the public domain so now I don't have to put specific attribution, but I do need to make the changes that you suggested during my presentation on Tuesday.
 
 I will continue to work on CSS so that it looks more game like and like you suggested I will wait to put on the bootstraps till the last week since I already know how to do those.
+
+Week 3
+I changed the source of the images so that they were inside a photos folder and then saved under that folder.
+
+
+function coinToss() {
+
+  var x = Math.floor(Math.random() * 2);
+
+  if (x === 0) {
+    coin.innerHTML = '<img class="heads animate-coin" src="photos/heads.png"/>';
+
+    heads += 1;
+    result.innerHTML = 'You got heads';
+    headsCounter.innerHTML = '<h1> Number of heads: ' + heads + '</h1>';
+
+  } else {
+    coin.innerHTML = '<img class="tails animate-coin" src="photos/tails.png"/>';
+     tails += 1;
+    result.innerHTML = 'You got tails';
+     tailsCounter.innerHTML = '<h1> Number of tails: ' + tails + '</h1>';
+
+  }
+
+}
+button.onclick = function() {
+  coinToss();
+}
+
+var coinToss = Math.random();
+if (userChoice === "HEADS") {
+    if (coinToss < 0.5) {
+        var result = alert("The coin landed on heads. You Win!");
+    }
+    else {
+        var result = alert("The coin landed on tails. You Lose!");
+    }
+}
+else {
+    if (coinToss < 0.5) {
+        var result = alert("The coin landed on heads. You Lose!");
+    }
+    else {
+        var result = alert("The coin landed on tails. You Win!");
+    }
+}

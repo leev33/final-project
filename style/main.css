@@ -1,12 +1,13 @@
 body {
   background: #fff;
   font-family: 'Calibri', sans-serif;
+  text-align: center;
 }
 #coin {
 position: center;
 }
 #button {
-  background:#E38D3E;
+  background:#469CB5;
   position: center;
   color:#fff;
   padding:10px 15px;
